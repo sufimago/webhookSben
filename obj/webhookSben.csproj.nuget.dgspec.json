@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\soufyane.youbi\\Desktop\\TFG\\webhook\\webhookSben\\webhookSben.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\soufyane.youbi\\Desktop\\TFG\\webhook\\webhookSben\\webhookSben.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\soufyane.youbi\\Desktop\\TFG\\webhook\\webhookSben\\webhookSben.csproj",
+        "projectName": "webhookSben",
+        "projectPath": "C:\\Users\\soufyane.youbi\\Desktop\\TFG\\webhook\\webhookSben\\webhookSben.csproj",
+        "packagesPath": "C:\\Users\\soufyane.youbi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\soufyane.youbi\\Desktop\\TFG\\webhook\\webhookSben\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\soufyane.youbi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\soufyane.youbi\\Desktop\\nuggets rben": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://logitravel.myget.org/F/smy/auth/ce9f175e-328d-4e3d-8752-d8b3b0730829/api/v3/index.json": {},
+          "https://logitravel.myget.org/F/toolfactory-dev/auth/ce9f175e-328d-4e3d-8752-d8b3b0730829/api/v3/index.json": {},
+          "https://logitravel.myget.org/F/toolfactory/auth/ce9f175e-328d-4e3d-8752-d8b3b0730829/api/v3/index.json": {},
+          "https://nuget.hangfire.io/nuget/hangfire-pro/v3/index.json": {},
+          "https://pkgs.dev.azure.com/toolfactory/_packaging/toolfactory/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.10.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
