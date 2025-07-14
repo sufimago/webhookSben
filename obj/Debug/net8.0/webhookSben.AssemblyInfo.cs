@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webhookSben")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d954487368ba0a5343e9c0ec6486c0b2c001f0f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("webhookSben")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webhookSben")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

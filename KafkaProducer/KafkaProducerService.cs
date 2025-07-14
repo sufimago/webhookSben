@@ -10,19 +10,29 @@ namespace webhookSben.KafkaProducer
     {
         private readonly string _bootstrapServers;
         private readonly string _topic;
+        private readonly string _saslUsername;
+        private readonly string _saslPassword;
 
         public KafkaProducerService(IConfiguration config)
         {
             _bootstrapServers = config["Kafka:BootstrapServers"];
             _topic = config["Kafka:Topic"];
-            Console.WriteLine($"KafkaProducerService configurado con BootstrapServers: {_bootstrapServers} y Topic: {_topic}");
+            _saslUsername = config["Kafka:SaslUsername"];
+            _saslPassword = config["Kafka:SaslPassword"];
         }
 
         public async Task ProduceAsync<T>(T message)
         {
             try
             {
-                var config = new ProducerConfig { BootstrapServers = _bootstrapServers };
+                var config = new ProducerConfig
+                {
+                    BootstrapServers = _bootstrapServers,
+                    SecurityProtocol = SecurityProtocol.SaslSsl,
+                    SaslMechanism = SaslMechanism.Plain,
+                    SaslUsername = _saslUsername,
+                    SaslPassword = _saslPassword
+                };
 
                 using var producer = new ProducerBuilder<Null, string>(config).Build();
 
